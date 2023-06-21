@@ -101,7 +101,7 @@ char toLower(char ch)
     {
         if ('a' < 'A')
         {
-            ch = ch + ('A'-'a');
+            ch = ch + ('A'-'a'); // = (ch-'A')+'a'
         }
         else
         {
