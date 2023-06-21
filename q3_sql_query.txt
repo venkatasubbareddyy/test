@@ -1,0 +1,62 @@
+mysql> SELECT ID, NAME, MARKS, 
+   CASE
+       WHEN MARKS>90 THEN 'A+'
+       WHEN MARKS>70 AND MARKS<=90 THEN 'A'
+       WHEN MARKS>50 AND MARKS<=70 THEN 'B'
+       WHEN MARKS>=40 AND MARKS<=50 THEN 'C'
+       WHEN MARKS<40 THEN 'FAIL'
+   ELSE
+       NULL
+   END AS GRADE
+FROM STUDENTS;
+
+
+Result:
++----+-----------------+-------+-------+
+| ID | NAME            | MARKS | GRADE |
++----+-----------------+-------+-------+
+|  1 | Frances White   |    35 | FAIL  |
+|  2 | Carolyn Bradley |    25 | FAIL  |
+|  3 | Annie Fernandez |    40 | C     |
+|  4 | Ruth Hanson     |    50 | C     |
+|  5 | Paula Fuller    |    75 | A     |
+|  6 | Bonnie Johnston |    95 | A+    |
+|  7 | Ruth Gutierrez  |    70 | B     |
+|  8 | Ernest Thomas   |    90 | A     |
+|  9 | Joe Garza       |    45 | C     |
+| 10 | Anne Harris     |    55 | B     |
+| 11 | Matt            |    44 | C     |
+| 12 | John            |    57 | B     |
+| 13 | Lucas           |    78 | A     |
++----+-----------------+-------+-------+
+13 rows in set (0.00 sec)
+
+
+
+
+
+
+
+
+
+Note:
+     These are the records inserted into table STUDENTS:
+mysql> select * from STUDENTS;
++----+-----------------+-------+
+| ID | NAME            | MARKS |
++----+-----------------+-------+
+|  1 | Frances White   |    35 |
+|  2 | Carolyn Bradley |    25 |
+|  3 | Annie Fernandez |    40 |
+|  4 | Ruth Hanson     |    50 |
+|  5 | Paula Fuller    |    75 |
+|  6 | Bonnie Johnston |    95 |
+|  7 | Ruth Gutierrez  |    70 |
+|  8 | Ernest Thomas   |    90 |
+|  9 | Joe Garza       |    45 |
+| 10 | Anne Harris     |    55 |
+| 11 | Matt            |    44 |
+| 12 | John            |    57 |
+| 13 | Lucas           |    78 |
++----+-----------------+-------+
+13 rows in set (0.00 sec)

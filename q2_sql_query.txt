@@ -1,0 +1,39 @@
+mysql> SELECT ID, NAME FROM CUSTOMER ORDER BY NAME DESC, ID ASC;
++----+-----------------+
+| ID | NAME            |
++----+-----------------+
+|  4 | Ruth Hanson     |
+|  7 | Ruth Gutierrez  |
+|  5 | Paula Fuller    |
+|  9 | Joe Garza       |
+|  1 | Frances White   |
+|  8 | Ernest Thomas   |
+|  2 | Carolyn Bradley |
+|  6 | Bonnie Johnston |
+|  3 | Annie Fernandez |
+| 10 | Anne Harris     |
++----+-----------------+
+10 rows in set (0.00 sec)
+
+
+
+
+Note:
+   These are the records inserted into table CUSTOMER:
+
+mysql> select * from CUSTOMER;
++----+-----------------+---------+---------+
+| ID | NAME            | COUNTRY | CREDITS |
++----+-----------------+---------+---------+
+|  1 | Frances White   | USA     |  200350 |
+|  2 | Carolyn Bradley | UK      |   15354 |
+|  3 | Annie Fernandez | France  |  359200 |
+|  4 | Ruth Hanson     | Albania |    1060 |
+|  5 | Paula Fuller    | USA     |   14789 |
+|  6 | Bonnie Johnston | China   |  100243 |
+|  7 | Ruth Gutierrez  | USA     |  998999 |
+|  8 | Ernest Thomas   | Canada  |  500500 |
+|  9 | Joe Garza       | UK      |   18782 |
+| 10 | Anne Harris     | USA     |  158367 |
++----+-----------------+---------+---------+
+10 rows in set (0.01 sec)
